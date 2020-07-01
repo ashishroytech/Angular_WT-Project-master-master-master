@@ -1,524 +1,517 @@
-
-  header{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("C:\Users\hp\Desktop\Angular_WT-Project-master-master-master\src\assets\1.jpg"); 
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("C:/Users/dell/Desktop/WT Final/Angular_WT-Project-master-master-master/src/assets/1.jpg"); 
    /* background-color: blanchedalmond;  */
    /* background-color: #e91e63; */
    height:400px;
    background-size: cover;
    background-position: top;
  }
- .menubar{
-   float:right;
-   list-style-type: none;
-   margin-top: 25px;
- }
- .menubar li{
-   display:inline-block;
- }
- 
- ul li a{
-   text-decoration:none;
-   color:black;
-   padding:10px 10px;
-   border:2px solid t #e91e63;
-   transition:0.6s ease ;
- 
- }
- ul li a:hover{
-   background-color: #e91e63;
-   color:#000;
- }
- 
- .active1 a{
-   /* background-color:seagreen; */
-   color:#000;
- 
- }
- 
- .logo img{
-   float:right;
-   width: 100px;
-   height: 80px;
-   padding: 10px;
- }
- .main{
-   /* max-width: 1200px; */
-   margin:auto;
- }
- 
- .title{
-   position: absolute;
-   top: 30%;
-   left:45%;
-   transform: translate(-50%,-50%);
- }
- 
- .title h1{
-   color:whitesmoke;
-   font-size:40px;
- }
- 
- .title h2{
-   text-align: center;
- }
- 
- .button
- {
-   position: absolute;
-   top: 60%;
-   left: 45%;
-   transform: translate(-50%,-50%);
- }
- .btn{
-   border:1px solid white;
-   padding:10px 30px;
-   margin:10px;
-   color:white;
-   text-decoration:none;
-   transition: 0.6s ease;
- }
- .btn:hover{
- background-color:white;
-   color:#000;
- 
- }
- 
- /* NAVIGATION BAR */
- 
- /* .a1 ,.c{
-   margin: 0px;
-   padding: 0px;
-   list-style: none;
- }
- .a1 .b{
-   float: left;
-   width: 130px;
-   height:50px ;
-   opacity: 0.8;
-   line-height: 40px;
-   text-align: center;
-   font-size: medium;
- }
- 
- .a1 .b a{
-   text-decoration: none;
-   color:black;
-   display: block;
-   
- }
- 
- .a1 .b a:hover{
-   background-color: #e91e63;
- }
- 
- .a1 .b .c .d{
-   display: none;
-   padding: 5px;
-   font-size: medium;
- }
- 
- .a1 .b:hover .c .d{
-   display: block;
- } */
+.menubar{
+float:right;
+list-style-type: none;
+margin-top: 25px;
+}
+.menubar li{
+display:inline-block;
+}
 
- #sidebar{
-   position: fixed;
-   width: 150px;
-   height: 100%;
-   left: -11%;
-   background-color:black;
+ul li a{
+text-decoration:none;
+color:black;
+padding:10px 10px;
+border:2px solid t goldenrod;
+transition:0.6s ease ;
+
+}
+ul li a:hover{
+background-color: goldenrod;
+color:#000;
+}
+
+.active1 a{
+/* background-color:seagreen; */
+color:#000;
+
+}
+
+.logo img{
+float:right;
+width: 100px;
+height: 80px;
+padding: 10px;
+}
+.main{
+/* max-width: 1200px; */
+margin:auto;
+}
+
+.title{
+position: absolute;
+top: 30%;
+left:45%;
+transform: translate(-50%,-50%);
+}
+
+.title h1{
+color:whitesmoke;
+font-size:40px;
+}
+
+.title h2{
+text-align: center;
+}
+
+.button
+{
+position: absolute;
+top: 60%;
+left: 45%;
+transform: translate(-50%,-50%);
+}
+.btn{
+border:1px solid white;
+padding:10px 30px;
+margin:10px;
+color:white;
+text-decoration:none;
+transition: 0.6s ease;
+}
+.btn:hover{
+background-color:white;
+color:#000;
+
+}
+
+/* NAVIGATION BAR */
+
+/* .a1 ,.c{
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+.a1 .b{
+float: left;
+width: 130px;
+height:50px ;
+opacity: 0.8;
+line-height: 40px;
+text-align: center;
+font-size: medium;
+}
+.a1 .b a{
+text-decoration: none;
+color:black;
+display: block;
+}
+.a1 .b a:hover{
+background-color: #e91e63;
+}
+.a1 .b .c .d{
+display: none;
+padding: 5px;
+font-size: medium;
+}
+.a1 .b:hover .c .d{
+display: block;
+} */
+
+#sidebar{
+position: fixed;
+width: 150px;
+height: 100%;
+left: -11%;
+background-color:black;
+}
+
+#sidebar li{
+color: white;
+font-size: 15px;
+padding:10px;
+/* border-bottom: 1px solid gray; */
+text-align: center;
+}
+
+.toggle-btn{
+position: absolute;
+left: 105%;
+top:15px;
+}
+
+.toggle-btn span{
+display: block;
+background-color: black;
+width:30px;
+height: 5px;
+margin: 3px;
+}
+
+#sidebar.active{
+left: 0;
+}
+
+
+
+/* login screen */
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
  }
 
- #sidebar li{
+ /* Full-width input fields */
+ input[type=text],
+ input[type=password] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+ }
+
+ /* Set a style for all buttons */
+ .buttonlog {
+   background-color: #4CAF50;
    color: white;
-   font-size: 15px;
-   padding:10px;
-   /* border-bottom: 1px solid gray; */
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+ }
+
+ .buttonlog:hover {
+   opacity: 0.8;
+ }
+
+ /* Extra styles for the cancel button */
+ .cancelbtn {
+   width: auto;
+   padding: 10px 18px;
+   background-color: #f44336;
+   border: none;
+   color: white;
+   margin: 8px 0;
+ }
+
+ .signupbtn {
+   width: auto;
+   padding: 10px 18px;
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   margin: 8px 0;
+ }
+
+ /* Center the image and position the close button */
+ .imgcontainer {
    text-align: center;
+   margin: 24px 0 12px 0;
+   position: relative;
  }
 
- .toggle-btn{
-   position: absolute;
-   left: 105%;
-   top:15px;
+ img.avatar {
+   width: 40%;
+   border-radius: 50%;
  }
 
- .toggle-btn span{
-   display: block;
-   background-color: black;
-   width:30px;
-   height: 5px;
-   margin: 3px;
+ .container {
+   padding: 16px;
  }
 
- #sidebar.active{
+ span.psw {
+   float: right;
+   padding-top: 16px;
+ }
+
+ /* The Modal (background) */
+ .modal {
+   display: none;
+   /* Hidden by default */
+   position: fixed;
+   /* Stay in place */
+   z-index: 1;
+   /* Sit on top */
    left: 0;
+   top: 0;
+   width: 100%;
+   /* Full width */
+   height: 100%;
+   /* Full height */
+   overflow: auto;
+   /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0);
+   /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4);
+   /* Black w/ opacity */
+   padding-top: 60px;
  }
 
+ /* Modal Content/Box */
+ .modal-content {
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 40%;
+   height: auto;
+ }
 
- 
-   /* login screen */
- 
-   body {
-       font-family: Arial, Helvetica, sans-serif;
-     }
- 
-     /* Full-width input fields */
-     input[type=text],
-     input[type=password] {
-       width: 100%;
-       padding: 12px 20px;
-       margin: 8px 0;
-       display: inline-block;
-       border: 1px solid #ccc;
-       box-sizing: border-box;
-     }
- 
-     /* Set a style for all buttons */
-     .buttonlog {
-       background-color: #4CAF50;
-       color: white;
-       padding: 14px 20px;
-       margin: 8px 0;
-       border: none;
-       cursor: pointer;
-       width: 100%;
-     }
- 
-     .buttonlog:hover {
-       opacity: 0.8;
-     }
- 
-     /* Extra styles for the cancel button */
-     .cancelbtn {
-       width: auto;
-       padding: 10px 18px;
-       background-color: #f44336;
-       border: none;
-       color: white;
-       margin: 8px 0;
-     }
- 
-     .signupbtn {
-       width: auto;
-       padding: 10px 18px;
-       background-color: #4CAF50;
-       border: none;
-       color: white;
-       margin: 8px 0;
-     }
- 
-     /* Center the image and position the close button */
-     .imgcontainer {
-       text-align: center;
-       margin: 24px 0 12px 0;
-       position: relative;
-     }
- 
-     img.avatar {
-       width: 40%;
-       border-radius: 50%;
-     }
- 
-     .container {
-       padding: 16px;
-     }
- 
-     span.psw {
-       float: right;
-       padding-top: 16px;
-     }
- 
-     /* The Modal (background) */
-     .modal {
-       display: none;
-       /* Hidden by default */
-       position: fixed;
-       /* Stay in place */
-       z-index: 1;
-       /* Sit on top */
-       left: 0;
-       top: 0;
-       width: 100%;
-       /* Full width */
-       height: 100%;
-       /* Full height */
-       overflow: auto;
-       /* Enable scroll if needed */
-       background-color: rgb(0, 0, 0);
-       /* Fallback color */
-       background-color: rgba(0, 0, 0, 0.4);
-       /* Black w/ opacity */
-       padding-top: 60px;
-     }
- 
-     /* Modal Content/Box */
-     .modal-content {
-       background-color: #fefefe;
-       margin: auto;
-       padding: 20px;
-       border: 1px solid #888;
-       width: 40%;
-       height: auto;
-     }
- 
-     /* The Close Button (x) */
-     .close {
-       position: absolute;
-       right: 25px;
-       top: 0;
-       color: #000;
-       font-size: 35px;
-       font-weight: bold;
-     }
- 
-     .close:hover,
-     .close:focus {
-       color: red;
-       cursor: pointer;
-     }
- 
-     /* Add Zoom Animation */
-     .animate {
-       -webkit-animation: animatezoom 0.6s;
-       animation: animatezoom 0.6s
-     }
- 
-     @-webkit-keyframes animatezoom {
-       from {
-         -webkit-transform: scale(0)
-       }
- 
-       to {
-         -webkit-transform: scale(1)
-       }
-     }
- 
-     @keyframes animatezoom {
-       from {
-         transform: scale(0)
-       }
- 
-       to {
-         transform: scale(1)
-       }
-     }
- 
-     /* Change styles for span and cancel button on extra small screens */
-     @media screen and (max-width: 300px) {
-       span.psw {
-         display: block;
-         float: none;
-       }
- 
-       .cancelbtn,
-       .signupbtn {
-         width: 100%;
-         border: none;
-       }
- 
-       .signupbtn {
-         width: 100%;
-         border: none;
-         color: green;
- 
-       }
-     }
- 
-     /* login screen close */
- 
- 
-     .highlight {
-       background-color: rgb(219, 215, 215);
-       /* border-left: white; */
-       border-left: 30px solid white;
-       border-right: 30px solid white;
-       padding: 1%;
-       font-family: Arial, Helvetica, sans-serif;
-     
-      
-    }
- 
-     .highlight,
-     .step1 {
-       font-size: 13px;
-       color: rgb(40, 40, 40);
-       font-family: Arial, Helvetica, sans-serif;
-     }
- 
-     /* Signin and signup */
- 
- 
-     /* The Close Button */
-     .close {
-       color: #aaaaaa;
-       float: right;
-       font-size: 28px;
-       font-weight: bold;
-     }
- 
-     .close:hover,
-     .close:focus {
-       color: #000;
-       text-decoration: none;
-       cursor: pointer;
-     }
- 
-     /* Signin and signup close */
-     
-     /* Login screen home button */
- 
-     .home-btn{
-       position: absolute;
-       top: 92%;
-       left: 50%;
-       transform: translate(-50%,-50%);
-     }
- 
-     /* footer section-for events */
-     .sect{
-      width: 100%;
-      height: 100vh;
-      /* background-image: url("/3.jpg"); */
-      background-size: cover;
-      background-position: center;
-    
-    }
-    
-    .sect .leftbox{
-      width: 50%;
-      height: 100%;
-      float: left;
-      padding: 50px;
-     box-sizing: border-box;
-    }
-    
-    .sect .leftbox .content{
-      color:#fff;
-      background: rgba(0,0,0,0.5);
-      padding: 40px;
-      transition: .5s;
-    }
-    
-    .sect .leftbox .content:hover{
-      background: #e91e63;
-    }
-    
-    .sect .leftbox .content h1{
-      margin: 0;
-      padding: 0;
-      font-size: 50px;
-      text-transform: uppercase;
-    }
-    
-    .sect .leftbox .content p{
-      margin: 10px 0 0;
-      padding: 0;
-    }
-    
-    .events{
-    position: relative;
-    width: 45%;
-    height: 110%;
-    background: rgba(0,0,0,0.5);
-    float: right;
-    box-sizing: border-box;
-    }
-    
-    .events ul{
-    position: absolute;
-    top: 50%;
-    transform:translateY(-50%);
-    margin: 0;
-    padding: 40px;
-    box-sizing: border-box;
-    }
-    
-    .events ul li{
-    list-style: none;
-    background: white;
-    box-sizing: border-box;
-    height: 220px;
-    /* margin:15px 0; */
-    }
-    
-    .time{
-    position: relative;
-    padding: 20px;
-    background: #262626;
-    box-sizing: border-box;
-    width: 30%;
-    height: 100%;
-    float: left;
-    text-align: center;
-    transition: .5s;
-    }
-    
-    .events ul li:hover .time {
-      background: #e91e63;
-    }
-    
-    .time h2{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    color: white;
-    font-size: 30px;
-    line-height: 30px;
-    }
+ /* The Close Button (x) */
+ .close {
+   position: absolute;
+   right: 25px;
+   top: 0;
+   color: #000;
+   font-size: 35px;
+   font-weight: bold;
+ }
 
-    .vd{
-    color: #000;
-    text-align: center;
-    background-color:white;
-    }
-    
-    .events ul li:hover .time h2 span{
-    font-size: 30px;
-    }
-    
-    .details{
-    padding: 20px;
-    background: white;
-    box-sizing: border-box;
-    width: 70%;
-    height: 100%;
-    float: left;
-    }
-    
-    .details h3{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    font-size: 22px;
-    }
-    
-    .details p{
-    position: relative;
-    margin: 10px 0 0;
-    padding: 0;
-    font-size: 16px;
-    }
-    
-    .details a{
-    display: block;
-    text-decoration: none;
-    /* text-transform: uppercase; */
-    padding: 10px 15px;
-    border:2px solid #262626;
-    margin-top: 15px;
-    font-size: 18px;
-    transition: .5s;
-    /* float:right; */
-    }
-    
-    .details a:hover{
-    background:#e91e63;
-    color:white;
-    border-color:#e91e63 ;
-    }
+ .close:hover,
+ .close:focus {
+   color: red;
+   cursor: pointer;
+ }
+
+ /* Add Zoom Animation */
+ .animate {
+   -webkit-animation: animatezoom 0.6s;
+   animation: animatezoom 0.6s
+ }
+
+ @-webkit-keyframes animatezoom {
+   from {
+     -webkit-transform: scale(0)
+   }
+
+   to {
+     -webkit-transform: scale(1)
+   }
+ }
+
+ @keyframes animatezoom {
+   from {
+     transform: scale(0)
+   }
+
+   to {
+     transform: scale(1)
+   }
+ }
+
+ /* Change styles for span and cancel button on extra small screens */
+ @media screen and (max-width: 300px) {
+   span.psw {
+     display: block;
+     float: none;
+   }
+
+   .cancelbtn,
+   .signupbtn {
+     width: 100%;
+     border: none;
+   }
+
+   .signupbtn {
+     width: 100%;
+     border: none;
+     color: green;
+
+   }
+ }
+
+ /* login screen close */
+
+
+ .highlight {
+   background-color: rgb(219, 215, 215);
+   /* border-left: white; */
+   border-left: 30px solid white;
+   border-right: 30px solid white;
+   padding: 1%;
+   font-family: Arial, Helvetica, sans-serif;
  
+  
+}
+
+ .highlight,
+ .step1 {
+   font-size: 13px;
+   color: rgb(40, 40, 40);
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* Signin and signup */
+
+
+ /* The Close Button */
+ .close {
+   color: #aaaaaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+
+ .close:hover,
+ .close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ /* Signin and signup close */
  
+ /* Login screen home button */
+
+ .home-btn{
+   position: absolute;
+   top: 92%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+ }
+
+ /* footer section-for events */
+ .sect{
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("/3.jpg"); */
+  background-size: cover;
+  background-position: center;
+
+}
+
+.sect .leftbox{
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 50px;
+ box-sizing: border-box;
+}
+
+.sect .leftbox .content{
+  color:#fff;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  transition: .5s;
+}
+
+.sect .leftbox .content:hover{
+  background: goldenrod;
+}
+
+.sect .leftbox .content h1{
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.sect .leftbox .content p{
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.events{
+position: relative;
+width: 45%;
+height: 110%;
+background: rgba(0,0,0,0.5);
+float: right;
+box-sizing: border-box;
+}
+
+.events ul{
+position: absolute;
+top: 50%;
+transform:translateY(-50%);
+margin: 0;
+padding: 40px;
+box-sizing: border-box;
+}
+
+.events ul li{
+list-style: none;
+background: white;
+box-sizing: border-box;
+height: 220px;
+/* margin:15px 0; */
+}
+
+.time{
+position: relative;
+padding: 20px;
+background: #262626;
+box-sizing: border-box;
+width: 30%;
+height: 100%;
+float: left;
+text-align: center;
+transition: .5s;
+}
+
+.events ul li:hover .time {
+  background: goldenrod;
+}
+
+.time h2{
+position: absolute;
+margin: 0;
+padding: 0;
+top: 50%;
+left:50%;
+transform:translate(-50%,-50%);
+color: white;
+font-size: 30px;
+line-height: 30px;
+}
+
+.vd{
+color: #000;
+text-align: center;
+background-color:white;
+}
+
+.events ul li:hover .time h2 span{
+font-size: 30px;
+}
+
+.details{
+padding: 20px;
+background: white;
+box-sizing: border-box;
+width: 70%;
+height: 100%;
+float: left;
+}
+
+.details h3{
+position: relative;
+margin: 0;
+padding: 0;
+font-size: 22px;
+}
+
+.details p{
+position: relative;
+margin: 10px 0 0;
+padding: 0;
+font-size: 16px;
+}
+
+.details a{
+display: block;
+text-decoration: none;
+/* text-transform: uppercase; */
+padding: 10px 15px;
+border:2px solid #262626;
+margin-top: 15px;
+font-size: 18px;
+transition: .5s;
+/* float:right; */
+}
+
+.details a:hover{
+background:goldenrod;
+color:white;
+border-color:goldenrod ;
+}
+

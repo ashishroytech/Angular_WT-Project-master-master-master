@@ -30,7 +30,8 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "src/assets/JS/navbar.js"
+              "src/assets/JS/navbar.js",
+              "src/assets/JS/blog.js"
             ]
           },
           "configurations": {
@@ -97,8 +98,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-            "node_modules/bootstrap/dist/js/bootstrap.min.js",
-            "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           }
         },
@@ -126,6 +127,10 @@
               "devServerTarget": "WT-Project:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

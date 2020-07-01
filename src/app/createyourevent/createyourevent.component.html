@@ -1,0 +1,83 @@
+
+<div id="event-registration">
+  <h1>Event Registration Form</h1>
+  <form id="event-registration-form" >
+    <!-- Form contents will go here -->
+    <fieldset>
+      <h3>Personal Information</h3>
+      <label for="first-name">Organizer's First Name</label>
+      <input type="text" id="first-name" name="first-name" />
+      <label for="last-name">Event Name</label>
+      <input type="text" id="last-name" name="last-name" />
+      <label for="unit">Event Description</label>
+      <input type="text" id="unit" name="unit" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required/>
+
+      <label for="calender">Event Start</label>
+     <input type="date" id="date1" name="date1"> 
+     <label for="calender">Event Ends</label>
+     <input type="date" id="date2" name="date2">
+      <label for="street">College Address</label>
+      <input type="text" id="street" name="street" />
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" />
+      <label for="postal-code">Postal Code</label>
+      <input type="text" id="postal-code" name="postal-code" />
+    </fieldset>
+    <fieldset>
+      <h3>Additional Information</h3>
+      <label for="size">Shirt Size</label>
+      <div>
+        <input type="radio" name="size" value="xsmall">XS
+        <input type="radio" name="size" value="small">S
+        <input type="radio" name="size" value="medium">M
+        <input type="radio" name="size" value="large">L
+        <input type="radio" name="size" value="xlarge">XL
+        <br />
+        <input type="checkbox" name="pickup"> I will be picking up my shirt on Event day.
+
+      </div>
+
+    </fieldset>
+    <div style="padding: 20px;">
+        <input type="button" class="successbutton" value="Submit Form"  data-toggle="modal"
+    data-target="#successful">
+    <br>
+    </div>
+    
+  </form>
+</div>
+
+
+        <!--Modal: Login / Register Form-->
+        <div class="modal fade" id="successful" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog cascading-modal" role="document">
+              <!--Content-->
+              <div class="modal-content">
+          
+                <!--Modal cascading tabs-->
+                <div class="modal-c-tabs">
+          
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-pills" role="tablist" style="height: 1.2cm; background-color:  rgba(182, 179, 179, 0.767);;"  >
+                    <li>
+                      <span class="close" style="padding-left:5mm; padding-top: 3mm; color: black;"  data-dismiss="modal">&times;</span>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                        <!--Body-->
+                      <div class="modal-body mb-0">
+                        <div class="md-form form-sm mb-0">
+                          <label >Your Form is Submitted. We will get back to you Soon!</label>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!--/.Content-->
+            </div>
+          </div>
+          <!--Modal: Login / Register Form-->

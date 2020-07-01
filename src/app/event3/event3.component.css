@@ -1,0 +1,89 @@
+
+  .header{
+    /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./src/assets/1.jpg");  */
+   /* background-color: blanchedalmond;  */
+   /* background-color: #e91e63; */
+   height:400px;
+   background-size: cover;
+   background-position: top;
+ }
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+*{
+font-family: Open Sans;
+}
+.event_button{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    align-items: center;
+    font-weight: bold;
+}
+.event_button1{
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  align-items: center;
+  font-weight: bold;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column1 {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 750px; /* Should be removed. Only for demonstration */
+    padding-left: 1.5cm;
+  }
+  .column2 {
+    float: left;
+    width: 28.9%;
+    padding: 10px;
+    height: 750px; /* Should be removed. Only for demonstration */
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    font-family:'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+  }
+  .rule{
+    background-color: lightgrey;
+    width: 700px;
+    border: 2px solid orange;
+    padding: 20px;
+    margin: 20px;
+  }
+  .modal-content1 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: auto;
+  }
+
+.map{
+  border: 2px solid orange;
+}
+
+
+
+
+
+  

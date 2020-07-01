@@ -1,0 +1,239 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<img src="../assets/event22.JPG" alt="event1" style="width: 100%; background-position: top;background-size: cover;position: absolute;">
+
+<div class="text-center" style="padding-top: 8cm;">
+  <input type="button" value="BOOK TICKETS" class="event_button" data-toggle="modal" data-target="#modalLRFormtry20">
+</div>
+<!-- <button (click)="updateText('pinki')">Test Button </button>
+<input type="text" [(value)]="text" #name20 name="name20" (keyup)="updateText(name20.value)"> -->
+<div class="row">
+  <div class="column1" style="text-align: justify; height: 850px;" >
+    <strong> Event Descriptions:</strong> <br>
+    TELOS 2020 is the Annual Online Technical Festival of MYWBUT. It is the ninth edition of "TELOS" and every year the number of participants has increased at a good rate. In the last edition, we have seen 2500+ participation from almost all the Technical Colleges of West Bengal as well as from few Technical Colleges of other states, which makes it the largest Online Technical Fest. <br>
+
+"TELOS" is also first of its kind where a participant competes with thousands of other participants without going to any particular place. Yes, they don't need to go anywhere, they just require Internet enabled computer or smartphone and all done. <br>
+
+In TELOS 2020, a lot more Prizes, Fame and Opportunities are waiting for you.<br><br>
+
+    <strong>Event Timing</strong> <br><br>
+    <table>
+      <tr>
+        <td>
+          <strong> Event Start Date - </strong> Thu, 28 May '20
+        </td>
+        <td style="padding-left: 1cm;">
+          <strong>Event End Date -</strong> Sun, 31 Jul '20
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Event Start Time -</strong> 09:00 am
+        </td>
+        <td style="padding-left: 1cm;">
+          <strong>Event End Time -</strong> 10:00 pm
+        </td>
+      </tr>
+    </table><br>
+    <strong>Event Lists:</strong><br><br>
+
+    <strong>Department:-</strong>
+    <label> Online Depertment</label> <br>
+    <strong>Ticket Name:-</strong>
+    <label >TELOS 2020 Registration</label> <br>
+    <strong>Description:-</strong>
+    <label >With a single Registration, a participant can Participte in all the Events under TELOS 2020.</label> <br><br>
+    <strong>Things that you should know -</strong>
+    <div class="rule">
+
+      <strong> Event End Date -</strong>
+      Sun, 31 Jul '20
+      <ul style="padding-left: 1cm;">
+        <li>
+          Get your ticket before your events get expired!
+        </li>
+        <li>
+          Check your email for the QR generated ticket confirmations!
+        </li>
+        <li>
+          Show your ticket QR code at the events venue!
+        </li>
+        <li>
+          Download your participation certificate from your the dashboard after attending the event!
+        </li>
+        <li>
+          Share your honor certificate on social media!
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="column2" >
+    <div class="map"> 
+      <iframe width="100%" height="400" src="http://maps.google.com/maps?q=13.027596, 77.629845&z=15&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+      <!-- <div style="width: 100%"><iframe width="100%" height="400"
+          src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=13.027596, 77.629845&amp;q=217%2C%201st%20Main%20Rd%2C%20HBR%20Layout%202nd%20Block%2C%203rd%20Block%2C%20HBR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560043+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
+            href="https://www.maps.ie/map-my-route/">Draw map route</a></iframe></div><br />
+    </div> -->
+  </div>
+</div>
+
+
+
+
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRFormtry20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills" role="tablist" style="height: 1.2cm;">
+
+          <li style="padding-left: 12cm;">
+            <span class="close" style="padding-left:5mm; padding-top: 3mm; color: black;"
+              data-dismiss="modal">&times;</span>
+          </li>
+        </ul>
+
+        <div class="tab-content" ng-app="">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="pane99" role="tabpanel">
+            <!--Body-->
+            <div class="modal-body mb-0">
+              <div class="md-form form-sm mb-0">
+                <label style="font: bold;">Online Training <br>
+                </label>
+                <!-- <div  style="padding-left: 2mm;"> -->
+                <label style="padding-left: 6cm;"></label>
+                <select id="department1" name="department1"
+                [(ngModel)]="department1" style="padding-left: 1cm; text-align: left;" >
+                
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+
+        </select> <br>
+                <!-- </div> -->
+                <label style="color:rgb(46, 46, 46) ; opacity: 0.7;"> Rs. 2000</label>
+              </div>
+            </div>
+            <!--Footer-->
+            <hr>
+            <div>
+              <div>
+                <p> <img src="./assets/attend1.JPG" alt=""> <label >Attendes:</label> {{department1}}  <img src="./assets/fare.JPG" alt=""><label >Total Fare:</label> {{department1*2000}}
+                  <!-- <button style=" width: 30%;
+                    background:orange;
+                    color: white;
+                    padding: 6px 5px;
+                    margin: 6px 0;
+                    border: none;
+                    cursor: pointer;
+                    opacity: 0.9;" href='/event2'>Proceed</button> -->
+                  <input type="button" value="Proceed" class="event_button" data-toggle="modal" (click)="getRandomNumberBetween()"
+                    data-target="#modalLRFormtry12">
+                </p>
+
+                <!-- </div>
+              <input type="button" value="Download ticket" class="event_button" data-toggle="modal"
+                data-target="#modalLRFormtry1">
+            </div> -->
+
+              </div>
+            </div>
+          </div>
+          <!--/.Content-->
+        </div>
+      </div>
+
+
+
+      <div class="modal fade" id="modalLRFormtry12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+          <!--Content-->
+          <div class="modal-content" >
+
+            <!--Modal cascading tabs-->           
+                <!--Panel 7-->
+                  <!--Body-->
+                  <div class='content' #content>
+                    <h1 style="text-align: center;">INVOICE</h1>
+                    <address>
+                      <p>The College Evevt <br>
+                      101 Near Bull temple<br>Banshankari <br> Banglore 560-086</p>
+                      <p>(080) 555-1234</p>
+                    </address>
+
+                    <div style="text-align: center;">
+                      <strong >TELOS 2020</strong> </div>
+                    <div style="background: center; padding-left: 5mm; font-size: 18px;"><strong>Invoice:</strong>
+                     {{random2}} <br><strong>Date :</strong> {{todayDate | date}} <br><strong>Description:</strong> TELOS 2020 is the Annual Online Technical Festival of MYWBUT. <br><strong>Department:</strong>Online Depertment<br><strong>Ticket Name :</strong>TELOS 2020 Registration <br><strong>Rate :</strong>Rs.2000 <br><strong>Quantity:</strong>{{department1}} <br><strong>Price :</strong>Rs.{{department1*2000}} <br> 
+                    </div> <hr>
+
+
+              
+                    <label >ADDITIONAL INFORMATION</label>
+                    <br>
+                    <ul style="padding-left: 1cm;">
+                      <li>
+                        Get your ticket before your events get expired!
+                      </li>
+                      <li>
+                        Check your email for the QR generated ticket confirmations!
+                      </li>
+                      <li>
+                        Show your ticket QR code at the events venue!
+                      </li>
+                      <li>
+                        Download your participation certificate from your the dashboard after attending the event!
+                      </li>
+                      <li>
+                        Share your honor certificate on social media!
+                      </li>
+                    </ul>
+
+                  </div>
+                  <!--Footer-->
+                  <hr>
+                  <div>
+                    <div style="text-align: center;">
+                      <p>
+                        <button style=" width: 30%;
+                      background:orange;
+                      color: white;
+                      padding: 6px 5px;
+                      margin: 6px 0;
+                      border: none;
+                      cursor: pointer;
+                      align-items: center;
+                      opacity: 0.9;" (click)="downloadpdf()">Download Ticket</button>
+                      </p>
+
+                    </div>
+                    <!-- <button type="button" class="btn btn-outline-info waves-effect ml-auto" style="color: black; border:1px solid black;" data-dismiss="modal">Close</button> -->
+                  </div>
+
+    
+              
+            
+            <!--/.Content-->
+          </div>
+        </div>
+
+
+  
